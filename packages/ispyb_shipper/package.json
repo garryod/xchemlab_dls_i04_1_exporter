@@ -1,0 +1,13 @@
+{
+  "name": "ispyb_shipper",
+  "version": "0.1.0",
+  "description": "A library for uploading shipments to ispyb",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "format:check": "prettier -c .",
+    "format:fix": "prettier -f ."
+  }
+}

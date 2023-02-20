@@ -1,0 +1,17 @@
+{
+  "name": "exporter",
+  "version": "0.1.0",
+  "description": "A service which performs sample exports",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && ts-node build/index.js",
+    "build": "tsc",
+    "lint": "eslint .",
+    "format:check": "prettier -c .",
+    "format:fix": "prettier -f ."
+  },
+  "dependencies": {
+    "ispyb_shipper": "^0.1.0"
+  }
+}

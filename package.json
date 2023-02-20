@@ -1,0 +1,38 @@
+{
+  "name": "xchemlab_dls_i04_1_exporter",
+  "version": "0.1.0",
+  "description": "A service which exports samples for shipment to i04-1 at Diamond Light Source",
+  "private": true,
+  "main": "index.js",
+  "repository": "https://github.com/garryod/labxchem_dls_i04_1_exporter",
+  "author": "Garry O'Donnell <garry.o'donnell@diamond.ac.uk>",
+  "contributors": [
+    {
+      "name": "Garry O'Donnell",
+      "url": "https://github.com/garryod",
+      "email": "garry.o'donnell@diamond.ac.uk"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn workspace exporter run start",
+    "build": "yarn workspaces run build",
+    "lint": "yarn workspaces run lint",
+    "format:check": "yarn workspaces run format:check",
+    "format:fix": "yarn workspaces run format:fix"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "workspaces": [
+    "packages/ispyb_shipper",
+    "packages/exporter"
+  ]
+}
