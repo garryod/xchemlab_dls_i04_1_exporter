@@ -15,7 +15,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "yarn workspace exporter run start",
+    "start": "yarn workspaces run build && yarn workspace exporter run start",
     "build": "yarn workspaces run build",
     "lint": "yarn workspaces run lint",
     "format:check": "yarn workspaces run format:check",

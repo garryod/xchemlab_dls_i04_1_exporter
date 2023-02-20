@@ -5,9 +5,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "yarn prisma:pull && yarn prisma:generate && tsc",
     "lint": "eslint .",
+    "prisma:pull": "prisma db pull",
+    "prisma:generate": "prisma generate",
     "format:check": "prettier -c .",
     "format:fix": "prettier -f ."
+  },
+  "devDependencies": {
+    "prisma": "^4.10.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.10.1"
   }
 }

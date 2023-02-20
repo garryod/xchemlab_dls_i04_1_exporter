@@ -6,6 +6,8 @@ services:
     volumes:
       - ..:/workspace:cached,Z
     command: sleep infinity
+    environment:
+      ISPYB_HOST: mysql://root:rootpassword@ispyb/ispyb_build
 
   ispyb:
     build:
